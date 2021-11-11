@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.10)  11 NOV 2021 00:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.10)  11 NOV 2021 01:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -311,8 +311,8 @@ Overfull \hbox (35.99997pt too wide) in alignment at lines 29--29
 [3] (main.aux) ) 
 Here is how much of TeX's memory you used:
  4126 strings out of 478927
- 60557 string characters out of 2862391
- 391381 words of memory out of 3000000
+ 60685 string characters out of 2862391
+ 391391 words of memory out of 3000000
  21913 multiletter control sequences out of 15000+600000
  417931 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -321,7 +321,7 @@ Here is how much of TeX's memory you used:
 m Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helv
 etic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (3 pages, 62651 bytes).
+Output written on main.pdf (3 pages, 62734 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
