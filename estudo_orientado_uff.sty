@@ -1,0 +1,69 @@
+%***************************************************
+%Created by Andre Luiz da Silva Pereira - 11/11/2021
+%***************************************************
+\ProvidesPackage{estudo_orientado_uff}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{bigstrut}
+\usepackage{makecell}
+\usepackage{graphicx}
+\graphicspath{ {./imgs/} }
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[square,sort,comma,numbers]{natbib}
+\renewcommand{\bibsection}{\section{Referências}}
+\usepackage[portuguese]{babel}
+
+%***************************************************
+%PREÂMBULO
+%***************************************************
+%args[título do estudo, nome do aluno, email do aluno, nome do orientador, email do orientador]
+\newcommand{\maketitletwo}[5]{
+	\begin{center}
+		\begin{tabularx}{160mm}{p{40mm} p{110mm}}
+			\makecell{\includegraphics[scale=0.13]{logo}} &
+			\makecell{
+				\multicolumn{1}{X}{
+					\vspace*{\fill}
+						\begin{flushleft}
+							\textbf{Universidade Federal Fluminense} \\
+							\textbf{Instituto de Computação}\\
+							\textbf{Programa de Pós-Graduação em Computação}
+						\end{flushleft}
+					\vspace*{\fill}
+				}
+			}
+		\end{tabularx}
+	\end{center}	
+	
+	\vspace{5pt}
+	\begin{center}
+		\textbf{Proposta de Estudo Orientado}\\
+		\vspace{5pt}
+		\Large{\textbf{#1}}
+	\end{center}
+	\vspace{10pt}
+	
+	\textit{\textbf{Aluno:}} \textit{#2} - \textit{#3}
+	
+	\textit{\textbf{Orientador:}} \textit{#4} - \textit{#5}
+	
+}
+
+%***************************************************
+%SEÇÃO DE ASSINATURA
+%***************************************************
+%args[nome do aluno, nome do orientador]
+\newcommand{\makesignature}[2]{
+	\vspace{40pt}
+	\today
+	\vspace{40pt}
+	\begin{center}
+		\begin{tabularx}{145mm}{p{70mm} p{5mm} p{70mm}}
+			\hrule & & \hrule \\
+			\makecell[c]{#1} & & \makecell[c]{#2}
+		\end{tabularx}
+	\end{center}
+}

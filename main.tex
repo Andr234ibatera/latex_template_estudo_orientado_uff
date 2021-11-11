@@ -1,0 +1,31 @@
+\documentclass[12pt, oneside, a4paper]{article}
+
+\usepackage{estudo_orientado_uff}
+
+\newcommand{\titulo}{Título da Proposta de Estudo Orientado}
+\newcommand{\aluno}{Nome Completo do Aluno}
+\newcommand{\alunoemail}{aluno@email.com}
+\newcommand{\orientador}{Nome Completo do Orientador}
+\newcommand{\orientadoremail}{orientador@email.com}
+
+\begin{document}
+	\maketitletwo{\titulo}{\aluno}{\alunoemail}{\orientador}{\orientadoremail}
+	
+	\section{Descrição do Tema}
+	\input{secs/description.tex}
+	
+	\section{Resultados Esperados}
+	\input{secs/results.tex}
+	
+	\section{Critério de Avaliação}
+	\input{secs/evaluation.tex}
+	
+	\section{Cronograma de Atividades}
+	\input{secs/schedule.tex}
+		
+	\bibliographystyle{acm}
+	\bibliography{main}
+	
+	\makesignature{\aluno}{\orientador}
+\end{document}
+
