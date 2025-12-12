@@ -1,24 +1,30 @@
 \documentclass[12pt, oneside, a4paper]{article}
 
 \usepackage{estudo_orientado_uff}
+\usepackage[table]{xcolor}
+\definecolor{uffgreen}{rgb}{0.039,0.411,0.317}
 
-\newcommand{\titulo}{Título da Proposta de Estudo Orientado}
-\newcommand{\aluno}{Nome Completo do Aluno}
-\newcommand{\alunoemail}{aluno@email.com}
-\newcommand{\orientador}{Nome Completo do Orientador}
-\newcommand{\orientadoremail}{orientador@email.com}
+\newcommand{\titulodocumento}{Proposta de Estudo Orientado}
+\newcommand{\titulo}{Título do projeto}
+\newcommand{\aluno}{Nome do Aluno}
+\newcommand{\alunoemail}{emaildoaluno@id.uff.br}
+\newcommand{\orientador}{Nome do Orientador}
+\newcommand{\orientadoremail}{emaildoorientador@id.uff.br}
+\newcommand{\coorientador}{Nome do Co-orientador}
+\newcommand{\coorientadoremail}{emaildocoorientador@id.uff.br}
+
 
 \begin{document}
-	\maketitletwo{\titulo}{\aluno}{\alunoemail}{\orientador}{\orientadoremail}
+	\maketitletwo{\titulodocumento}{\titulo}{\aluno}{\alunoemail}{\orientador}{\orientadoremail}{\coorientador}{\coorientadoremail}
 	
 	\section{Descrição do Tema}
 	\input{secs/description.tex}
 	
 	\section{Resultados Esperados}
 	\input{secs/results.tex}
-	
-	\section{Critério de Avaliação}
-	\input{secs/evaluation.tex}
+
+        \section{Critério de Avaliação}
+        \input{secs/evaluation}
 	
 	\section{Cronograma de Atividades}
 	\input{secs/schedule.tex}
@@ -26,6 +32,6 @@
 	\bibliographystyle{acm}
 	\bibliography{main}
 	
-	\makesignature{\aluno}{\orientador}
+	\makesignature{\aluno}{\orientador}{\coorientador}
 \end{document}
 

@@ -20,7 +20,7 @@
 %PREÂMBULO
 %***************************************************
 %args[título do estudo, nome do aluno, email do aluno, nome do orientador, email do orientador]
-\newcommand{\maketitletwo}[5]{
+\newcommand{\maketitletwo}[8]{
 	\begin{center}
 		\begin{tabularx}{160mm}{p{40mm} p{110mm}}
 			\makecell{\includegraphics[scale=0.13]{logo}} &
@@ -40,15 +40,17 @@
 	
 	\vspace{5pt}
 	\begin{center}
-		\textbf{Proposta de Estudo Orientado}\\
+		\textbf{#1}\\
 		\vspace{5pt}
-		\Large{\textbf{#1}}
+		\Large{\textbf{#2}}
 	\end{center}
 	\vspace{10pt}
 	
-	\textit{\textbf{Aluno:}} \textit{#2} - \textit{#3}
+	\textit{\textbf{Aluno:}} \textit{#3} - \textit{#4}
 	
-	\textit{\textbf{Orientador:}} \textit{#4} - \textit{#5}
+	\textit{\textbf{Orientador:}} \textit{#5} - \textit{#6}
+
+    \textit{\textbf{Co-orientador:}} \textit{#7} - \textit{#8}
 	
 }
 
@@ -56,14 +58,18 @@
 %SEÇÃO DE ASSINATURA
 %***************************************************
 %args[nome do aluno, nome do orientador]
-\newcommand{\makesignature}[2]{
+\newcommand{\makesignature}[3]{
 	\vspace{40pt}
 	Niterói, \today
 	\vspace{40pt}
-	\begin{center}
-		\begin{tabularx}{145mm}{p{70mm} p{5mm} p{70mm}}
-			\hrule & & \hrule \\
-			\makecell[c]{#1} & & \makecell[c]{#2}
-		\end{tabularx}
-	\end{center}
+    \par            
+    \noindent
+	\begin{tabularx}{130mm}{p{64mm} p{2mm} p{64mm}}
+		\hrulefill & & \hrulefill \\
+		\makecell[c]{#2\\{\small \textbf{Orientador}}} &  & \makecell[c]{#3\\{\small \textbf{Co-orientador}}}\\
+        \\ \\ \\
+		\multicolumn{3}{c}{\hrulefill}\\
+        \multicolumn{3}{c}{#1}\\
+        \multicolumn{3}{c}{{\small \textbf{Aluno}}}\\
+	\end{tabularx}
 }
